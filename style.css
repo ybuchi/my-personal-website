@@ -1,0 +1,15 @@
+/* Nav Bar */
+nav a {
+    /* Removes the default underline and purple of a visited link */
+    text-decoration: none;
+}
+a.nav:link, a.nav:visited {
+    color: black;
+}
+
+a.nav:hover {
+    color: teal;
+}
+a.nav.active {
+    font-weight: bold;
+}
