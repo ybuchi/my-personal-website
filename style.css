@@ -25,6 +25,19 @@ a.nav.active {
     border-radius: 10px;
 }
 
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.first-col {
+    grid-column: 1;
+    width: 50%;
+}
+.second-col {
+    grid-column: 2;
+    width: 50%;
+}
 /* Social Media Links */
 .social-media-link {
     width: 35px;
