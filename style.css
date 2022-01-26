@@ -14,6 +14,17 @@ a.nav.active {
     font-weight: bold;
 }
 
+/* Landing Page Header Content */
+.landing-header-content {
+    text-align: center;
+}
+
+#title-img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
 /* Social Media Links */
 .social-media-link {
     width: 35px;
