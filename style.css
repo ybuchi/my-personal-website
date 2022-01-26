@@ -24,6 +24,7 @@ a.nav.active {
 #title-img {
     display: block;
     margin: auto;
+    border: 1px black solid;
     border-radius: 10px;
 }
 
