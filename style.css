@@ -13,3 +13,8 @@ a.nav:hover {
 a.nav.active {
     font-weight: bold;
 }
+
+/* Social Media Links */
+.social-media-link {
+    width: 35px;
+}
