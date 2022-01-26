@@ -2,6 +2,7 @@
 nav a {
     /* Removes the default underline and purple of a visited link */
     text-decoration: none;
+    margin: 0px 10px;
 }
 a.nav:link, a.nav:visited {
     color: black;
@@ -17,6 +18,7 @@ a.nav.active {
 /* Landing Page Header Content */
 .landing-header-content {
     text-align: center;
+    font-family: "Cabin Sketch", cursive;
 }
 
 #title-img {
