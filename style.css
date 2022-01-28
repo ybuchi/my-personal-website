@@ -21,6 +21,22 @@ a.nav.active {
     font-family: "Cabin Sketch", cursive;
 }
 
+#landing-header{
+    padding: 30px 10px;
+    background-position: center;
+    background-size: contain;
+    background: url(./images/website_bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+#landing-main {
+    background: lightgray;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
 #title-img {
     display: block;
     margin: auto;
