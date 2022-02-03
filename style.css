@@ -3,6 +3,12 @@ nav a {
     /* Removes the default underline and purple of a visited link */
     text-decoration: none;
     margin: 0px 10px;
+    padding: auto;
+}
+nav {
+    text-align: center;
+    height:30px;
+    padding: 5px;
 }
 a.nav:link, a.nav:visited {
     color: black;
@@ -18,15 +24,15 @@ a.nav.active {
 /* Landing Page Header Content */
 .landing-header-content {
     text-align: center;
-    font-family: "Cabin Sketch", cursive;
+    font-family: "Architects Daughter", cursive;
 }
 
 #landing-header{
     padding: 30px 10px;
     background-position: center;
-    background-size: contain;
-    background: url(./images/website_bg.jpg);
-    background-position: center;
+    background-size:contain;
+    background: url(./images/website_bg2.jpg);
+    background-position:center;
     background-size: 100% 100%;
     border-radius: 10px;
 }
@@ -40,7 +46,7 @@ a.nav.active {
 #title-img {
     display: block;
     margin: auto;
-    border: 1px black solid;
+    border: 3px white solid;
     border-radius: 10px;
 }
 
@@ -51,11 +57,9 @@ a.nav.active {
 }
 .first-col {
     grid-column: 1;
-    width: 50%;
 }
 .second-col {
     grid-column: 2;
-    width: 50%;
 }
 /* Social Media Links */
 .social-media-link {
