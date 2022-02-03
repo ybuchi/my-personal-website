@@ -79,6 +79,9 @@ a.nav.active {
 section div[class="grid-container"] {
     padding: 10px;
 }
+.landing-text {
+    text-align: center;
+}
 /* Color Scheme */
 /* 8D8741
 659DBD
