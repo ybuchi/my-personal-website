@@ -2,6 +2,13 @@
 nav a {
     /* Removes the default underline and purple of a visited link */
     text-decoration: none;
+    margin: 0px 10px;
+    padding: auto;
+}
+nav {
+    text-align: center;
+    height:30px;
+    padding: 5px;
 }
 a.nav:link, a.nav:visited {
     color: black;
@@ -17,15 +24,64 @@ a.nav.active {
 /* Landing Page Header Content */
 .landing-header-content {
     text-align: center;
+    font-family: "Cabin Sketch", cursive;
+    color: black;
+}
+
+#landing-header{
+    padding: 30px 10px;
+    background-color: #659DBD;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#landing-main {
+    background-color:#DAAD86;
+    font-family: "Cabin Sketch", cursive;
 }
 
 #title-img {
     display: block;
     margin: auto;
+    border: 3px #BC986A solid;
     border-radius: 10px;
+}
+#title-img:hover {
+    border: 3px #FBEEC1 solid;
+}
+#title-header {
+    font-size:70px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.first-col {
+    grid-column: 1;
+}
+.second-col {
+    grid-column: 2;
 }
 
 /* Social Media Links */
 .social-media-link {
     width: 35px;
 }
+.theme-box {
+    border: 5px black solid;
+    width: 100px;
+    text-align: center;
+    background: #8D8741;
+}
+section div[class="grid-container"] {
+    padding: 10px;
+}
+/* Color Scheme */
+/* 8D8741
+659DBD
+DAAD86
+BC986A
+FBEEC1 */

@@ -3,7 +3,12 @@
   <head>
     <title>Yannik Büchi's Website</title>
     <link rel="stylesheet" href="./style.css">
-  </head>
+    <!-- Link to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin+Sketch:wght@400;700&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">  </head>
   <body>
     <!-- Nav Bar -->
     <nav>
@@ -13,27 +18,66 @@
     </nav>
 
     <!-- Header/Introduction -->
-    <header id="landing-header">
-      <h1 class="landing-header-content" id="title-header">Yannik Büchi</h1>
-      <img src="./images/Business_Casual_Profile.jpeg" alt="Yannik Büchi" title="That's me!" style="width: 100px" id="title-img">
-      <h3 class="landing-header-content">Mission-driven software developer</h3>
-    </header>
+    <div >
+      
+        <header id="landing-header" class="grid-container">
+          <div class="first-col">
+            <img src="./images/Business_Casual_Profile.jpeg" alt="Yannik Büchi" title="That's me!" style="width: 200px" id="title-img">
+          </div>
+          <div class="second-col">
+            <h1 class="landing-header-content" id="title-header">Yannik Büchi</h1>
+            <h3 class="landing-header-content">A mission-driven software developer based in Queens, NY</h3>
+            <h4 class="landing-header-content">JavaScript - CSS - HTML - MERN</h4>
+          </div>
+          <div class="third-col">
+            
+          </div>
+          
+        </header>
+      </div>
+    </div>
 
-    <!-- Mission Statement & Work Skills Overview -->
-    <section id="mission">
-      <article>
-        <h1>Mission</h1>
-        <p>I am a mission-driven software developer with particular expertise leveraging the MERN stack with JavaScript to develop front-end and back-end website infrastructure. In addition to being a passionate programmer, I place a special emphasis on using my skills and experience to make a tangible, positive impact on our society and the environment.</p>
-      </article>
-    </section>
 
-    <!-- Personal Background and Basic Life Outlook -->
-    <section id="background">
-      <article>
-        <h1>A little More About Me</h1>
-        <p>Born in Colombia, naturalized in Switzerland, and raised in the United States, I particularly thrive in diverse environments and like to think that my multicultural background is the key to my out-of-the-box thinking and approach to both coding and life.</p>
-      </article>
-    </section>
+    <main id="landing-main">
+
+      <!-- Personal Background and Basic Life Outlook -->
+      <section id="background">
+        <div class="grid-container">
+          <figure class="first-col theme-box">
+            <h4>Background</h4>
+          </figure>
+          <article class="second-col">
+            <p>Born in Colombia, naturalized in Switzerland, and raised in the United States, I particularly thrive in diverse environments and like to think that my multicultural background is the key to my out-of-the-box thinking and approach to both coding and life.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Mission Statement & Work Skills Overview -->
+      <section id="mission">
+        <div class="grid-container">
+          <article class="first-col">
+            <p>I am a mission-driven software developer with particular expertise leveraging the MERN stack with JavaScript to develop front-end and back-end website infrastructure. In addition to being a passionate programmer, I place a special emphasis on using my skills and experience to make a tangible, positive impact on our society and the environment.</p>
+          </article>
+
+          <figure class="second-col theme-box">
+            <h4>Mission</h4>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Work Experience-->
+      <section id="work">
+        <div class="grid-container">
+          <figure class="first-col theme-box">
+            <h4>Work</h4>
+          </figure>
+          <article class="second-col">
+            <p>Born in Colombia, naturalized in Switzerland, and raised in the United States, I particularly thrive in diverse environments and like to think that my multicultural background is the key to my out-of-the-box thinking and approach to both coding and life.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
 
     <footer>
       <h3>Social Media</h3>
