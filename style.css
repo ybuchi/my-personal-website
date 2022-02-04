@@ -113,26 +113,27 @@ caption {
     font-size: 25px;
 }
 .skills {
-    text-align: right;
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
+    font-size: 12px;
   }
 .skills-container {
-    width: 100px;
+    width: 200px;
     background-color: #ddd;
     border-radius:3px;
 }
 .skills-french {
-    width: 100px; background-color: blue;
+    width: 200px; background-color: #659DBD;
     border-radius:3px;
 }
 .skills-english {
-    width: 100px; background-color: red;
+    width: 200px; background-color: brown;
     border-radius:3px;
 }
 .skills-german {
-    width: 100px; background-color: yellow;
+    width: 150px; background-color: #FBEEC1;
     border-radius:3px;
 }
 
@@ -140,7 +141,7 @@ caption {
 
 @keyframes color-anim {
     0%{border:3px solid #BC986A}
-    50%{border:3px solid #DAAD86}
+    50%{border:3px solid #FBEEC1}
     100%{border: 3px solid #BC986A}
 }
 
