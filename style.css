@@ -128,16 +128,19 @@ caption {
     border-radius:3px;
 }
 .skills-french {
-    width: 200px; background-color: #659DBD;
+    width: 0px; background-color: #659DBD;
     border-radius:3px;
+    animation: skills-bar-fluent 2s forwards;
 }
 .skills-english {
-    width: 200px; background-color: brown;
+    width: 0px; background-color: brown;
     border-radius:3px;
+    animation: skills-bar-fluent 2s forwards;
 }
 .skills-german {
-    width: 150px; background-color: #FBEEC1;
+    width: 0px; background-color: #FBEEC1;
     border-radius:3px;
+    animation: skills-bar-intermediate 2s forwards;
 }
 
 
@@ -161,6 +164,12 @@ caption {
     90% { transform: translate(0.5px, 1px) rotate(-0.5deg); }
     100% { transform: translate(0.5px, 0.5px) rotate(0deg); }
   }
+@keyframes skills-bar-fluent {
+    100% {width: 200px;}
+}
+@keyframes skills-bar-intermediate {
+    100% {width: 150px;}
+}
 /* Color Scheme */
 /* 8D8741
 659DBD
