@@ -28,25 +28,31 @@ a.nav.active {
     font-family: "Cabin Sketch", cursive;
     color: black;
 }
-    .squiggly {
-        animation-name: squiggly-anim;
-        animation-duration:10s;
+.shake:hover{
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count:4;
+}
+    /* .shake {
+        animation-name: shake;
+        animation-duration: 1.5s;
         animation-iteration-count: infinite;
-    }
+    } */
 
 #landing-header{
     padding: 30px 10px;
     background-color: #659DBD;
     background-position: center;
     background-size: cover;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 90px 10px 0px 0px;
+
 }
 
 #landing-main {
-    border-top: 3px solid black;
+    border-top: 3px solid #FBEEC1;
     background-color:#DAAD86;
     font-family: "Cabin Sketch", cursive;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 90px 10px;
 }
 
 #title-img {
@@ -56,7 +62,8 @@ a.nav.active {
     border-radius: 10px;
 }
 #title-img:hover {
-    border: 3px #FBEEC1 solid;
+    animation-name: color-anim;
+    animation-duration: 5s;
 }
 #title-header {
     font-size:70px;
@@ -85,11 +92,9 @@ a.nav.active {
     width: 35px;
 }
 .theme-box {
-    border: 2px black solid;
-    width: 100px;
+    font-size: 40px;
     text-align: center;
-    background: #8D8741;
-    border-radius: 10px;
+    margin: 20px 5px ;
 }
 
 section div[class="grid-container"] {
@@ -101,12 +106,57 @@ section div[class="grid-container"] {
 .language-icon {
     width: 30px;
 }
-
-@keyframes squiggly-anim {
-    0%{color:#DAAD86}
-    50%{color:#FBEEC1}
-    100%{color:#DAAD86}
+table {
+    width: 100%;
 }
+caption {
+    font-size: 25px;
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+.skills-container {
+    width: 100px;
+    background-color: #ddd;
+    border-radius:3px;
+}
+.skills-french {
+    width: 100px; background-color: blue;
+    border-radius:3px;
+}
+.skills-english {
+    width: 100px; background-color: red;
+    border-radius:3px;
+}
+.skills-german {
+    width: 100px; background-color: yellow;
+    border-radius:3px;
+}
+
+
+
+@keyframes color-anim {
+    0%{border:3px solid #BC986A}
+    50%{border:3px solid #DAAD86}
+    100%{border: 3px solid #BC986A}
+}
+
+@keyframes shake {
+    0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+    10% { transform: translate(-1px, -1px) rotate(-0.5deg); }
+    20% { transform: translate(-1px, 0px) rotate(0.5deg); }
+    30% { transform: translate(1px, 0.5px) rotate(0deg); }
+    40% { transform: translate(0.5px, -1px) rotate(0.5deg); }
+    50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+    60% { transform: translate(-1px, 0px) rotate(0deg); }
+    70% { transform: translate(1px, 0px) rotate(-0.5deg); }
+    80% { transform: translate(-1px, -1px) rotate(0.5deg); }
+    90% { transform: translate(0.5px, 1px) rotate(-0.5deg); }
+    100% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  }
 /* Color Scheme */
 /* 8D8741
 659DBD
