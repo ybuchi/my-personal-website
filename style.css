@@ -81,9 +81,13 @@ a.nav.active {
     grid-template-columns: auto auto;
 }
 .first-col {
+    margin: 0px 5px;
+    padding: 0px 30px;
     grid-column: 1;
 }
 .second-col {
+    margin: 0px 5px;
+    padding: 60px 30px;
     grid-column: 2;
 }
 .third-col {
@@ -97,9 +101,11 @@ a.nav.active {
 .theme-box {
     font-size: 40px;
     text-align: center;
-    margin: 20px 5px ;
+    margin: 10px 5px ;
 }
-
+section {
+    padding: 30px 0px;
+}
 section div[class="grid-container"] {
     padding: 10px;
 }
@@ -108,9 +114,6 @@ section div[class="grid-container"] {
 }
 .language-icon {
     width: 30px;
-}
-table {
-    width: 100%;
 }
 caption {
     font-size: 25px;
@@ -141,6 +144,13 @@ caption {
     width: 0px; background-color: #FBEEC1;
     border-radius:3px;
     animation: skills-bar-intermediate 2s forwards;
+}
+
+table[id="language-table"]{
+    font-size: 20px;
+}
+h1 {
+    margin: 10px 0px;
 }
 
 
