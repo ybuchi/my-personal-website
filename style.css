@@ -149,6 +149,13 @@ caption {
 table[id="language-table"]{
     font-size: 20px;
 }
+th {
+    height: 50px;
+}
+td {
+    height: 50px;
+    text-align: left; 
+}
 h1 {
     margin: 10px 0px;
 }
