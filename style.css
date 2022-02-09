@@ -1,4 +1,4 @@
-/* Nav Bar */
+/* NAVIGATION BAR */
 nav a {
     /* Removes the default underline and purple of a visited link */
     text-decoration: none;
@@ -8,13 +8,11 @@ nav a {
 nav {
     font-family: "Cabin Sketch", cursive;
     font-size: 20px;
-    overflow: hidden;
     text-align: center;
     margin:auto;
     height:30px;
     position:sticky;
     top: 0;
-
 }
 a.nav:link, a.nav:visited {
     color: black;
@@ -27,44 +25,30 @@ a.nav.active {
     font-weight: bold;
 }
 
-/* Landing Page Header Content */
+/* LANDING PAGE (index.html) HEADING JUMBOTRON */
+#landing-header{
+    height: 500px;
+    width: 100%;
+    background-color: #659DBD;
+    border-radius: 90px 10px 0px 0px;
+}
+#landing-header-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+}
 .landing-header-content {
     text-align: center;
     font-family: "Cabin Sketch", cursive;
     color: black;
 }
-.shake:hover{
-    animation-name: shake;
-    animation-duration: 1s;
-    animation-iteration-count:4;
-}
-    /* .shake {
-        animation-name: shake;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-    } */
-
-#landing-header{
-    padding: 30px 10px;
-    background-color: #659DBD;
-    background-position: center;
-    background-size: cover;
-    border-radius: 90px 10px 0px 0px;
-
-}
-
-#landing-main {
-    border-top: 3px solid #FBEEC1;
-    background-color:#DAAD86;
-    font-family: "Cabin Sketch", cursive;
-    border-radius: 0px 0px 90px 10px;
-}
-
 #title-img {
-    display: block;
-    margin: auto;
     border: 3px #BC986A solid;
-    border-radius: 10px;
+    border-radius: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #title-img:hover {
     animation-name: color-anim;
@@ -77,23 +61,33 @@ a.nav.active {
     font-size: 70px;
 }
 
+/* LANDING MAIN SECTION */
+#landing-main {
+    border-top: 3px solid #FBEEC1;
+    background-color:#DAAD86;
+    font-family: "Cabin Sketch", cursive;
+    border-radius: 0px 0px 90px 10px;
+}
+
+/* ANIMATION CLASSES */
+.shake:hover{
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count:4;
+}
+
 /* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 2fr;
 }
 .first-col {
-    margin: 0px 5px;
-    padding: 0px 30px;
     grid-column: 1;
+    position: relative;
 }
 .second-col {
-    margin: 0px 5px;
-    padding: 60px 30px;
     grid-column: 2;
-}
-.third-col {
-    grid-column: 3;
+    position: relative;
 }
 
 /* Social Media Links */
