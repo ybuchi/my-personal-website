@@ -45,7 +45,9 @@ a.nav.active {
 #landing-header{
     height: 500px;
     width: 100%;
-    background-color: #659DBD;
+    background: url("./images/watercolor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px 10px 0px 0px;
     position: relative;
 }
@@ -82,12 +84,15 @@ a.nav.active {
 
 /* LANDING MAIN SECTION */
 .landing-main {
-    border-top: 3px solid #FBEEC1;
     font-family: "Cabin Sketch", cursive;
     padding: 20px 20px;
 }
 #languages {
-    background-color: #BC986A;
+    background-color: whitesmoke;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #mission {
     background-color: #DAAD86;
