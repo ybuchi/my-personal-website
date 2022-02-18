@@ -89,16 +89,26 @@ a.nav.active {
 }
 #languages {
     background-color: whitesmoke;
-    border-left: 1px black solid;
-    border-right: 1px black solid;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+#languages:hover {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+}
 #mission {
-    background-color: #DAAD86;
+    background-color: #96afbd;
+}
+#mission:hover {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
 }
 #work {
-    background-color: #FBEEC1;
+    background-color: whitesmoke;
+}
+#work:hover {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
 }
 /* ANIMATION CLASSES */
 .shake{
@@ -195,6 +205,9 @@ td {
     padding: 20px;
 }
 
+footer {
+    background-color:96afbd;
+}
 @keyframes color-anim {
     0%{border:3px solid #6aacbc}
     50%{border:3px solid #ffffff}
