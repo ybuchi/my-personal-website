@@ -89,6 +89,8 @@ a.nav.active {
 }
 #languages {
     background-color: whitesmoke;
+    border-left: 3px whitesmoke solid;
+    border-right: 3px whitesmoke solid;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -98,6 +100,10 @@ a.nav.active {
 }
 #mission {
     background-color: #96afbd;
+    border-left: 3px #96afbd solid;
+    border-right: 3px #96afbd solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #mission:hover {
     border-left: 3px black solid;
@@ -105,6 +111,10 @@ a.nav.active {
 }
 #work {
     background-color: whitesmoke;
+    border-left: 3px whitesmoke solid;
+    border-right: 3px whitesmoke solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #work:hover {
     border-left: 3px black solid;
@@ -205,8 +215,13 @@ td {
     padding: 20px;
 }
 
+footer-content {
+    display: block;
+}
 footer {
-    background-color:96afbd;
+    background-color:#96afbd;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 @keyframes color-anim {
     0%{border:3px solid #6aacbc}
