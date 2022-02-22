@@ -1,4 +1,4 @@
-/* Nav Bar */
+/* NAVIGATION BAR */
 nav a {
     /* Removes the default underline and purple of a visited link */
     text-decoration: none;
@@ -8,13 +8,13 @@ nav a {
 nav {
     font-family: "Cabin Sketch", cursive;
     font-size: 20px;
-    overflow: hidden;
     text-align: center;
     margin:auto;
     height:30px;
     position:sticky;
     top: 0;
-
+    /* to make sure that the navbar does not disappear into the background when scrolling down: */
+    z-index: 1000;
 }
 a.nav:link, a.nav:visited {
     color: black;
@@ -27,49 +27,54 @@ a.nav.active {
     font-weight: bold;
 }
 
-/* Landing Page Header Content */
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.first-col {
+    grid-column: 1;
+    position: relative;
+}
+.second-col {
+    grid-column: 2;
+    position: relative;
+}
+
+/* LANDING PAGE (index.html) HEADING JUMBOTRON */
+#landing-header{
+    height: 500px;
+    width: 100%;
+    background: url("./images/watercolor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+#landing-header-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .landing-header-content {
     text-align: center;
     font-family: "Cabin Sketch", cursive;
     color: black;
 }
-.shake:hover{
-    animation-name: shake;
-    animation-duration: 1s;
-    animation-iteration-count:4;
-}
-    /* .shake {
-        animation-name: shake;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-    } */
-
-#landing-header{
-    padding: 30px 10px;
-    background-color: #659DBD;
-    background-position: center;
-    background-size: cover;
-    border-radius: 90px 10px 0px 0px;
-
-}
-
-#landing-main {
-    border-top: 3px solid #FBEEC1;
-    background-color:#DAAD86;
-    font-family: "Cabin Sketch", cursive;
-    border-radius: 0px 0px 90px 10px;
-}
-
-#title-img {
-    display: block;
-    margin: auto;
+/* #title-img {
     border: 3px #BC986A solid;
-    border-radius: 10px;
+    border-radius: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #title-img:hover {
     animation-name: color-anim;
     animation-duration: 5s;
-}
+} */
 #title-header {
     font-size:70px;
 }
@@ -77,23 +82,65 @@ a.nav.active {
     font-size: 70px;
 }
 
-/* Grid Container */
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
+/* LANDING MAIN SECTION */
+.landing-main {
+    font-family: "Cabin Sketch", cursive;
+    padding: 20px 20px;
 }
-.first-col {
-    margin: 0px 5px;
-    padding: 0px 30px;
-    grid-column: 1;
+#languages {
+    background-color: whitesmoke;
+    border-left: 3px whitesmoke solid;
+    border-right: 3px whitesmoke solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.second-col {
-    margin: 0px 5px;
-    padding: 60px 30px;
-    grid-column: 2;
+#languages:hover {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
 }
-.third-col {
-    grid-column: 3;
+#mission {
+    background-color: #96afbd;
+    border-left: 3px #96afbd solid;
+    border-right: 3px #96afbd solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#mission:hover {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+}
+#work {
+    background-color: whitesmoke;
+    border-left: 3px whitesmoke solid;
+    border-right: 3px whitesmoke solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#work:hover {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+}
+/* ANIMATION CLASSES */
+.shake{
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+.blurb {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.blurb-rightalign {
+    text-align: right;
+}
+  
+section > h1 {
+    padding: 20px;
+    font-size: 40px;
 }
 
 /* Social Media Links */
@@ -101,9 +148,17 @@ a.nav.active {
     width: 35px;
 }
 .theme-box {
-    font-size: 40px;
     text-align: center;
     margin: 10px 5px ;
+}
+#theme-box2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 40px 10px 10px;
+    padding: 30px;
+    background-color:rgb(215, 247, 250);
+    border: 2px solid black ;
+    border-radius: 5px;
 }
 section {
     padding: 30px 0px;
@@ -143,7 +198,7 @@ caption {
     animation: skills-bar-fluent 2s forwards;
 }
 .skills-german {
-    width: 0px; background-color: #FBEEC1;
+    width: 0px; background-color: orange;
     border-radius:3px;
     animation: skills-bar-intermediate 2s forwards;
 }
@@ -157,17 +212,21 @@ th {
 td {
     height: 50px;
     text-align: left; 
-}
-h1 {
-    margin: 10px 0px;
+    padding: 20px;
 }
 
-
-
+footer-content {
+    display: block;
+}
+footer {
+    background-color:#96afbd;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
 @keyframes color-anim {
-    0%{border:3px solid #BC986A}
-    50%{border:3px solid #FBEEC1}
-    100%{border: 3px solid #BC986A}
+    0%{border:3px solid #6aacbc}
+    50%{border:3px solid #ffffff}
+    100%{border: 3px solid #bc766a}
 }
 
 @keyframes shake {
@@ -183,6 +242,20 @@ h1 {
     90% { transform: translate(0.5px, 1px) rotate(-0.5deg); }
     100% { transform: translate(0.5px, 0.5px) rotate(0deg); }
   }
+  @keyframes shake2 {
+    0% { transform: translate(-1px, 0.2px) rotate(-1deg); }
+    10% { transform: translate(-1px, -1px) rotate(-0deg); }
+    20% { transform: translate(-1px, 0px) rotate(-1deg); }
+    30% { transform: translate(1px, 0.5px) rotate(0deg); }
+    40% { transform: translate(0.5px, -1px) rotate(0.5deg); }
+    50% { transform: translate(-0.5px, 1px) rotate(1deg); }
+    60% { transform: translate(-1px, 0px) rotate(0deg); }
+    70% { transform: translate(1px, 0px) rotate(-0.5deg); }
+    80% { transform: translate(-1px, -1px) rotate(0.5deg); }
+    90% { transform: translate(0.5px, 1px) rotate(-0.5deg); }
+    100% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  }
+
 @keyframes skills-bar-fluent {
     100% {width: 200px;}
 }
@@ -190,8 +263,22 @@ h1 {
     100% {width: 150px;}
 }
 /* Color Scheme */
-/* 8D8741
-659DBD
+/* 8D8741 -greenish
+659DBD -blue
 DAAD86
 BC986A
 FBEEC1 */
+
+/* Portfolio Section */
+#portfolio-heading {
+    font-family: 'Cabin Sketch', cursive;
+}
+.card {
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+}
+.project {
+    font-family: 'Cabin Sketch', cursive;
+}

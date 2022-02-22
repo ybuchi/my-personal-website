@@ -3,6 +3,12 @@
   <head>
     <title>Yannik Büchi's Website</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Link to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin+Sketch:wght@400;700&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">  
   </head>
   <body>
     <!-- Navbar -->
@@ -12,31 +18,49 @@
       <a href="./contact.html" class="nav">Contact</a>
     </nav>
 
-    <heading>
+    <heading id="portfolio-heading">
         <h1>Portfolio</h1>
         <h3>Here you can find all the coding projects I have done!</h3>
     </heading>
-    
-    <article id="project1">
-        <h1>Project 1</h1>
-        <p>This is a summary description of Project 1</p>
-    </article>
-    <article id="project2">
-        <h1>Project 2</h1>
-        <p>This is a summary description of Project 2</p>
-    </article>
+
+    <div class="grid-container">
+        <article class="column-1 project">
+            <h1>Project 1</h1>
+            <div class="card"></div>
+            <p>This is a summary description of Project 1</p>
+        </article>
+        <article class="column-2 project">
+            <h1>Project 2</h1>
+            <div class="card"></div>
+            <p>This is a summary description of Project 2</p>
+        </article>
+    </div>
     
     <footer>
-      <h3>Social Media</h3>
-       <!-- The target attribute set to _blank allows us to open the link in a new tab -->
-        <!-- Github Profile -->
-        <a href="https://github.com/ybuchi" target="_blank">
-          <img src="./images/GitHub-Mark-64px.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
-        </a>
-        <!-- LinkedIn Profile -->
-        <a href="https://www.linkedin.com/in/yannikbuchi/" target="_blank">
-          <img src="./images/LI-In-Bug.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
-        </a>
+      <div class="grid-container">
+        <div class="first-col footer-content">
+          <h3>Social Media</h3>
+          <ul style="list-style:none">
+            <li>
+              <!-- The target attribute set to _blank allows us to open the link in a new tab -->
+                  <!-- Github Profile -->
+              <a href="https://github.com/ybuchi" target="_blank">
+                <img src="./images/GitHub-Mark-64px.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
+              </a>
+            </li>
+            
+            <li>
+              <!-- LinkedIn Profile -->
+              <a href="https://www.linkedin.com/in/yannikbuchi/" target="_blank">
+                <img src="./images/LI-In-Bug.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/french" title="french icons">French icons created by IYAHICON - Flaticon</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
    </body>

@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Link to Google Fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin+Sketch:wght@400;700&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">  </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin+Sketch:wght@400;700&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">  
+  </head>
   <body>
     <!-- Nav Bar -->
     <nav>
@@ -20,33 +21,26 @@
     <!-- Header/Introduction -->
     <div >
       
-        <header id="landing-header" class="grid-container">
-          <div class="first-col">
+        <header id="landing-header">
+          <!-- <div class="first-col">
             <img src="./images/Business_Casual_Profile.jpeg" alt="Yannik Büchi" title="That's me!" style="width: 200px" id="title-img">
-          </div>
-          <div class="second-col">
-            <h1 class="landing-header-content shake" id="title-header">Yannik Büchi</h1>
-            <h1 class="landing-header-content shake" id="title-subheader">&#60/&#62</h1>
-            <h3 class="landing-header-content shake">A mission-driven software developer based in Queens, NY</h3>
-            <h4 class="landing-header-content shake">JavaScript - CSS - HTML - MERN</h4>
-          </div>
-          <div class="third-col">
-            
-          </div>
-          
+          </div> -->
+            <div id="landing-header-wrapper">
+              <h1 class="landing-header-content" id="title-header">Yannik Büchi</h1>
+              <h1 class="landing-header-content" id="title-subheader">&#60/&#62</h1>
+              <h1 class="landing-header-content">Coder Without Borders</h1>
+              <h4 class="landing-header-content">JavaScript - CSS - HTML - MERN</h4>
+            </div>
         </header>
-        
       </div>
-    </div>
 
 
-    <main id="landing-main">
-
+    <main class="landing-main" id="languages">
       <!-- Personal Background and Basic Life Outlook -->
       <section id="background">
+        <h1>Bringing a multi-cultural perspective to coding.</h1>
         <div class="grid-container">
-          <article class="first-col theme-box">
-            <h1 class="shake">Background</h1>
+          <article class="first-col theme-box" id="theme-box2">
              <!-- Language Skills Table -->
              <table id="language-table">
               <!-- <caption>Languages</caption> -->
@@ -85,61 +79,81 @@
               </tr>
             </table>
           </article>
+
           <div class="second-col">
-            <p>
-              <strong>Hello!</strong>, <em>Bonjour!</em>, <strong>Hallo!</strong>
-               Born in Colombia and a naturalized Swiss citizen, I grew up in a small francophone community in Westchester, New York. 
-               While I found that being raised at the intersection of French, American and Swiss cultures can be quite challenging, I quickly
-               learned to embrace each and every facet of my international upbringing and thrive in equally diverse and open-minded social and professional environments.
-            </p>
+            <div class="blurb">
+              <img src="./images/colombia.png" alt="Colombia Outline" style="width:300px">
+              <img src="./images/switzerland.png" alt="Switzerland Outline" style="width:200px">
+              <img src="./images/usa.png" alt="USA Outline" style="width:200px">
+            </div>
           </div>
         </div>
       </section>
+    </main>
 
+    <main class="landing-main" id="mission">
       <!-- Mission Statement & Work Skills Overview -->
-      <section id="mission">
+      <section>
+        <h1 class="blurb-rightalign">Coding for a better future.</h1>
         <div class="grid-container">
           <article class="first-col landing-text">
-            <p>
-              The greatest issues of our time include climate change, pollution and rampant social inequality.
-              To me, these challenges represent an opportunity to make a tangible and positive impact on our planet and in society, whether through coding or in my everyday life. 
-            </p>
+            <div class="blurb">
+              <p>
+                Coding for a better future. 
+              </p>
+            </div>
           </article>
 
-          <div class="second-col theme-box shake">
+          <div class="second-col theme-box">
             <h1>Mission</h1>
           </div>
         </div>
       </section>
-
+    </main>
+    <main class="landing-main" id="work">
       <!-- Work Experience-->
-      <section id="work">
+      <section>
+        <h1>Learning through Exploration</h1>
         <div class="grid-container">
-          <figure class="first-col theme-box shake">
-            <h4>Work</h4>
+          <figure class="first-col theme-box">
+            <h4>Learning through Exploration</h4>
           </figure>
           <article class="second-col landing-text">
-            <p>Born in Colombia, naturalized in Switzerland</p>
+            <div class="blurb">
+              <p>Diverse coding skillset in full-stack engineering and data analytics and engineering.</p>
+            </div>
           </article>
         </div>
       </section>
     </main>
 
-
     <footer>
-      <h3>Social Media</h3>
-      <!-- The target attribute set to _blank allows us to open the link in a new tab -->
-        <!-- Github Profile -->
-        <a href="https://github.com/ybuchi" target="_blank">
-          <img src="./images/GitHub-Mark-64px.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
-        </a>
-        <!-- LinkedIn Profile -->
-        <a href="https://www.linkedin.com/in/yannikbuchi/" target="_blank">
-          <img src="./images/LI-In-Bug.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
-        </a>
-        <a href="https://www.flaticon.com/free-icons/french" title="french icons">French icons created by IYAHICON - Flaticon</a>
-
+      <div class="grid-container">
+        <div class="first-col footer-content">
+          <h3>Social Media</h3>
+          <ul style="list-style:none">
+            <li>
+              <!-- The target attribute set to _blank allows us to open the link in a new tab -->
+                  <!-- Github Profile -->
+              <a href="https://github.com/ybuchi" target="_blank">
+                <img src="./images/GitHub-Mark-64px.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
+              </a>
+            </li>
+            
+            <li>
+              <!-- LinkedIn Profile -->
+              <a href="https://www.linkedin.com/in/yannikbuchi/" target="_blank">
+                <img src="./images/LI-In-Bug.png" alt="Yannik's Github Profile" title="Github" class="social-media-link">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/french" title="french icons">French icons created by IYAHICON - Flaticon</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
+
 
     <script src="script.js"></script>
   </body>
